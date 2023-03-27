@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;700&display=swap");
+section:first-of-type h1 {
+  font-family: "PT serif";
+  font-size: 3.5rem;
+  letter-spacing: -0.05rem;
+  margin-bottom: 0;
+}
+
+section:first-of-type h2 {
+  font-family: "Poppins";
+  font-size: 18px;
+  letter-spacing: -0.05rem;
+  margin-bottom: 0;
+}
+
+section:first-of-type p {
+  font-family: "Poppins";
+  font-size: 14px;
+  letter-spacing: -0.05rem;
+  margin-bottom: 50px;
+}
+
+html {
+  font-size: 10px;
+  margin: 20px;
+}
+
+.profiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 400px);
+}
+
+.profiles-description img {
+  display: block;
+  width: 138px;
+  height: 260px;
+}
+
+.profiles-description p:first-of-type {
+  font-family: "Poppins";
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.job-right {
+  position: relative;
+  top: -245px;
+  left: 73px;
+  rotate: 90deg;
+}
+
+.job-left {
+  position: relative;
+  top: -240px;
+  left: 66px;
+  rotate: 90deg;
+}
+
+.job-style {
+  font-family: "PT serif";
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.dropdown {
+  margin-top: 65px;
+  margin-left: 15px;
+}
+
+footer {
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 1.3rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: red;
+}
+
+@media only screen and (min-width: 1440px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    height: 100vh;
+    width: 100vw;
+  }
+  section:first-of-type {
+    display: flex;
+    width: 100%;
+    place-content: center;
+    justify-content: space-evenly;
+    margin-left: 15%;
+  }
+  .main-right {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-right p {
+    width: 45%;
+  }
+  .profiles {
+    grid-template-rows: repeat(2, 400px);
+    grid-template-columns: repeat(3, 300px);
+    margin-left: 25%;
+    margin-top: 20px;
+  }
+  .dropdown {
+    margin: 0;
+  }
+  .profiles-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .job-left {
+    top: -245px;
+    left: 75px;
+  }
+  .job-right {
+    top: -245px;
+    left: 75px;
+  }
+  .desktop-dropdown {
+    margin-top: 50px;
+  }
+}/*# sourceMappingURL=styles.css.map */
